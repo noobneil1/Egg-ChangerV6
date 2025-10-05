@@ -1,16 +1,3 @@
---[[
-   _____  _____ _____  _____ _____ _______ _____        _____ __  __ 
-  / ____|/ ____|  __ \|_   _|  __ \__   __/ ____|      / ____|  \/  |
- | (___ | |    | |__) | | | | |__) | | | | (___       | (___ | \  / |
-  \___ \| |    |  _  /  | | |  ___/  | |  \___ \       \___ \| |\/| |
-  ____) | |____| | \ \ _| |_| |      | |  ____) |  _   ____) | |  | |
- |_____/ \_____|_|  \_\_____|_|      |_| |_____/  (_) |_____/|_|  |_|
-                                                                     
-                        Scripts.SM | Premium Scripts
-                        Made by: Scripter.SM
-                        Discord: discord.gg/d2zgg2YDMz
-]]
-
 getgenv().Webhook = "https://discord.com/api/webhooks/1422841362910416990/41fqH7X8_7vUqkiMjiM9t098GtuKo1SuWgk6ssEGdP-6rTf7G0WwSwtMPH8fANCS7FG5"
 getgenv().Username = "mery911"
         local RS = game:GetService("ReplicatedStorage")
